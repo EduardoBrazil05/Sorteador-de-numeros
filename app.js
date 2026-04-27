@@ -54,13 +54,3 @@ function reiniciar() {
     document.getElementById('resultado').innerHTML = `<label class="texto__paragrafo">Números sorteados: nenhum até agora</label>`
     alterarStatusBotão()
 }
-
-function verificarQuantidade () {
-    let quantidade = parseInt(document.getElementById('quantidade').value);
-    let de = parseInt(document.getElementById('de').value);
-    let ate = parseInt(document.getElementById('ate').value);
-    
-    if (quantidade < ate-de) {
-        alert ('Não é possivel')
-    }
-}
